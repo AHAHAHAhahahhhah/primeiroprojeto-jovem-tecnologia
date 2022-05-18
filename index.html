@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script src="JS/sorteador.js"></script>
 </head>
 <body>
-    <div>
-        <label for="campo1">Range Inicial</label>
-        <input type="number" id= "RangeInicial" placeholder="Informe o range inicial" />
-    </div>
-    <br>
-    <div>
-        <label for="campo2">Range Final</label>
-        <input type="number" id= "RangeFinal" placeholder="Informe o range final" />
-    </div>
-    <br>
-    <div>
-        <label for="campo3">Aposta</label>
-        <input type="number" id= "Aposta" placeholder="Informe sua aposta" />
-    </div>
-
-    <br>
-    <div>
-        <button onclick="SubmeterFormulario()">Sortear</button>
+    <div class="container">
+        <div class="Campo1">
+            <label for="campo1">Range Inicial</label><br>
+            <input class="campo-texto" type="number" id= "RangeInicial" placeholder="Informe o range inicial" />
+        </div>
+        <br>
+        <div class="Campo2">
+            <label for="campo2">Range Final</label><br>
+            <input class="campo-texto" type="number" id= "RangeFinal" placeholder="Informe o range final" />
+        </div>
+        <br>
+        <div class="Campo3">
+            <label for="campo3">Aposta</label><br>
+            <input class="campo-texto" type="number" id= "Aposta" placeholder="Informe sua aposta" />
+        </div>
+    
+        <br>
+        <div>
+            <input class="button" name="button" type="button" value="Sortear" onclick="SubmeterFormulario()">
+        </div>
     </div>
 </body>
 </html>
